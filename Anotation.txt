@@ -1,0 +1,77 @@
+1 - toFixed: 	    Fixa a quantidade de números decimais.
+2 - replace:	    Troca uma coisa por outra.
+3 - toLocaleString: Formatação monetária.
+4 - Pontencia: 	    Potenciação
+5 - Intervalos:     Intervalos usando operador &&
+6 - Criar IMG:      Criar Img com javaScript
+7 - ForEach:        For simplificado
+
+-----------------------------------------------------------------------------------------------
+
+1 - Adicionar quantidade de numeros decimais
+var n1 = 1545.5
+n1.toFixed(2)
+Resultado: 1545.5
+
+-----------------------------------------------------------------------------------------------
+
+2 - Troca o ponto pala virgula
+var n1 = 1545.5
+n1.toFixed(2).replace('.' , ',')
+Resultado: 1545,50
+
+-----------------------------------------------------------------------------------------------
+
+3 - Formatação monetária
+var n1 = 1545.5
+n1.toLocaleString('pt-BR', {style: 'currency', currencuy: 'BRL'}) // Formatação real
+n1.toLocaleString('pt-BR', {style: 'currency', currencuy: 'USD'}) // formatação dólar
+n1.toLocaleString('pt-BR', {style: 'currency', currencuy: 'EUR'}) // Formatação euro
+
+-----------------------------------------------------------------------------------------------
+
+4 - Pontencia usando **
+5 ** 2 = 25
+
+- Ordem de precedência dos operadores aritméticos
+ ()	
+ **	
+ * / %
+ + -	
+ > < >= <=
+ !
+ &&
+ ||
+
+-----------------------------------------------------------------------------------------------
+
+5 - Intervalo utilizando &&
+idade >= 15 && idade <= 17 
+A idade está entre 15 e 17
+
+-----------------------------------------------------------------------------------------------
+
+6 - Criar Img com javaScript sem ter a tag <img> previamente criada
+ var img = document.createElement('img')
+ img.setAttribute('id' , 'foto')
+-----------------------------------------------------------------------------------------------
+
+7 - ForEach
+
+ for(let pos in num) {
+    console.log(`A posição ${pos} tem o valor ${num[pos]}`)
+ }
+
+-----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+

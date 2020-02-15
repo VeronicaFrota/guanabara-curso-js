@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="modelo.style.css">
+    <title>Contador</title>
+</head>
+
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+
+    <section>
+        <div class="info-msg" id="msg">
+            <h1>Vamos contar!</h1>
+        </div>
+        <div class="info-foto" id="foto">
+            <p>Inicio:<input type="number" name="inicio" id="inicio"></p>
+            <p>Fim:<input type="number" name="fim" id="fim"></p>
+            <p>Passos:<input type="number" name="passo" id="passo"></p>
+            <input type="button" value="Contar" onclick="contar()">
+        </div>
+        <div id="res" class="info-msg">
+            Preparando a contagem...
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoEmVideo</p>
+    </footer>
+
+    <script src="modelo.js"></script>
+
+</body>
+
+</html>

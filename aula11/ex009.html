@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <hr>
+
+    <h1>Verifica País</h1>
+    Em qual pais você vive <input type="text" name="txtPais" id="txtPais">
+    <input type="button" value="varificaPais" onclick="verificarPais()">
+    <div id="resPais"></div>
+
+    <script>
+        function calcular() {
+            var txtv = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#res')
+            var velNumber = Number(txtv.value)
+
+            res.innerHTML = `<p>Sua velocidade é de <strong>${velNumber} Km/h</strong></p>`
+
+            velNumber >= 60 ? res.innerHTML += `<p>Multado</p>` : res.innerHTML += `<p>Dirija sempre com cinto de segurança</p>`
+        }
+
+        function verificarPais() {
+            var pais = document.querySelector('input#txtPais').value
+            var resultadoPais = document.querySelector('div#resPais')
+            resPais.innerHTML = `<p>Você vive no pais: <strong>${pais}</strong></p>`
+
+            pais != 'Brasil' ? resPais.innerHTML += `Você é estrangeiro` : resPais.innerHTML += `Você é brasileiro`
+        }
+    </script>
+
+</body>
+
+</html>
